@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!--html lag significa a linguaguem que o seu site vai estar-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--Meta charset é o conjunto de caractéries que o seu site vai conter-->    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--meta name="viewport" o site vai ocupar 100% do tela e ele vai abrir em 100% da tela sem zoom -->       
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--Todas as tags HTML tem uma abertura de tag um parâmetro um valor eum conteudo
+    Ex: 
+        Abertura:<a>
+            parâmetro:<a HREF="">
+                valor<a href="IMAGES.PNG"
+                    conteudo:<a>CONTEUDO</a>       
+
+
+
+    Todas as tags de CSS possuim caracteristicas também como
+    Ex: 
+        p(seletor){
+            fontfamily: Arial;(declaração)
+            font-size: :12pt;(pt significa pontos);
+            color:blue;(valor)   
+            (propriedade)
+        }
+
+
+    Opção de quebra de linha altomaticamente é world wrap    
+               
+                        EX001
+<html lang="pt-br" significa que a página é em portugues brasileiro
+        <hr> cria uma linha horizontal
+
+                        Ex002
+
+    &lt;-é o simbolo < e o &gt; é o > que significa respectivamente LESS THAN/GREATER THAN
+
+        para adicionar emojis colocamos &#x
+        O site para encontrar os emojis é:emojipedia.org
+
+                        Ex 003
+        Direitos autorais em imagens 
+            Para obter imagens com direito comercial precisamos ir no google.com/images ir em preferencias ir em MARCADAS PARA REUTILIZAÇÂO E MODIFICAÇÂO
+            outro site:unsplash.com
+            outro site:pexels.com
+
+            control+spacebar = vai exibir todos os arquivos da pasta
+
+        Para baixar um icone va no site:iconarquive
+            É interessante o icone estar em arquivo .ico
+                Ou favicon.io
+        
+        Para adiconar um favicon - link:favicon
+
+                        Ex 008
+        para selecionar um texto e colocar uma tag dentro precisamos selecionar o texto dar control shift p
+        e usar wrap whit abrreviantion
+
+        para tornar um texto forte ou seja negrito usamos <strong>
+        para tornar um texto destacado ou seja ítalico usamos <em>
+        <small>significa um texto pequeno-pode ser usado pra letras pequenas o rodapé
+            <big>(obsoleto)Significa um texto grande
+                <mark>Grifa um texto
+                    <del>Cria um texto que pode ser lido mais não considerado
+                        <ins>indica que o texto foi inserido,para dar ênfase que ele foi inserido depois
+                            <sup>É um texto sobescrito 
+                                <sub>subrescrito
+
+                        Ex 008b  
+
+        <pre>Mantém a formatação do texto
+            <code>é usado pra citar um código onde a fonte todas as letras são do mesmo tamanho
+                <bloqquote>Citação maior em bloco
+
+                        Ex 009
+
+        <ol>Quer dizer lista ordenada
+            <li>Itens da lista
+                <ol type=1>-Numeros
+                <ol type="I">Numeros romanos maisculus
+                <ol type="i">Numeros romanos minusculos
+                <ol type="A">A.B.C.D.E...
+                <ol type="a">a.b.c.d.e...
+                    <ol type="1" start="5") o parâmetro start vai dizer em que numero a lista vai começar
+                
+        
+        <ul>Lista não ordenada
+            <li>Elementos da lista
+                <li type="disc">           
+                <li type="circle">           
+                <li type="square">
+                       
+                    
+        <dl>(defenition list)Lista de descrissão
+            <dt>(definition term)Item que vai ser descrito
+                <dd>(definition description)Descrissão do item
+                        EX010 - Links e âncoras
+
+        <a href="lugar que você quer que a página vá">
+            
+            <a href="exemplo" target=_blank>Quer dizer que a página ira abrir em outra aba
+                
+                <a href="exemplo" rel="external"> é importante e vai dizer que você vai abrir uma nova guia para ter uma semânctica
+                   
+                    Para acessar outra pagina do mesmo site que esta no seu site ex:
+                        <a href="NOMEDOARQUIVO">
+                            <a href="" rel="external"
+                            <a href="" rel="next">Significa que você esta indo para proxima página
+                            <a href="" rel="prev"> Significa que você esta voltando
+                            <a href="exemplo" rel="nofollow" quer dizer que você não confia na página
+                Muito importante usarmos o HREFLANG
+                ex: <a href:site.com hreflang="en"
+
+            Para disponilizar um dawnload temos um exemplo abaixo:
+                <a href="nomedoarquivo" download="nomedo arquivo">
+                    <a href="nomedoarquivo" type="MEDIATYPE">- Ou seja o mediatype dele que encontramos no site:
+                        https://www.iana.org/assignments/media-types/media-types.xhtml
+                    Ex011 - Imagens dinâmicas,audios e videos
+Imagens adptativas para dispositivos diferentes usamos a tag:
+            <picture>
+                SOURCE:MEDIA:TYPE
+                source="media(max-widht:PXQUE DESEJAR" srcet="NOME DA IMAGEM MENOR"(source:media:type) TYPE ="nome do arquivo da imagem" ex:
+                <source media="(min-width: )" srcset="" type="image/png">
+
+                Adicionando audios
+                
+                <audio src="NOMEDOARQUIVO"> - Forma mais simples
+                
+                    <audio AUTOPLAY> -Um atributo Booleano; se especificado (mesmo se o valor for "false"!), o áudio iniciará automaticamente assim que possível sem parar de carregar os dados.
+                
+                    <audio src="EXEMPLO" CONTROLS> O navegador oferecerá controles(a caixinha para controlar a musica)
+
+                    Podemos também adiconar de outra forma que é a recomendada
+
+                    <audio>
+                        
+                        SOURCE:SRC - <source src="NOMEDOARQUIVO" type="audio/mpeg">
+                            Para audio MP3 usamos type="audio/mpeg"
+                            Para audio OGG usamos type="audio/ogg"
+                            Para audio WAV usamos type="audio/wav"
+                            
+                    </audio>
+                    Atributos da tag audio
+                    <audio PRELOAD="" auto/metadata/none
+                        AUTO - o site so vai carregar por completo quando o audio for baixado
+                        METADATA - baixa apenas os metadados(o comprimento...)
+                        NONE - Indica que o audio não vai ser carregado
+                            <audio CONTROLS> CONTROLS = caxinha de controle
+                            
+                            <audio AUTOPLAY LOOP> AUTOPLAY- Vai tocar automaticamente e LOOP ele vai tocar em loop
+
+                        Colocando vídeo no site 
+                        <video>
+                            SOURCE:SRC
+                          <source src="NOMEDOARQUIVO" type="TIPODOARQUIVO">
+                        </video>
+                          Ex:
+                            <source src:media/video.mp4 type="video/mp4"
+                        Tipos de videos
+                        .mp4 type='video/mp4'
+                        .webm type="video/webm"
+                        .ogv type="video/ogg"
+
+                        <video POSTER="NOMEDAIMAGEM"> adiciona uma imagem de capa no seu vídeo
+
+                        <video WIDHT='500'> Tamanho que o vídeo vai ser exibido na página
+
+                            Adicionando vídeos do youtube
+                            
+                            Vamos no youtube clicamos em comportilhar em vamos em incorporar 
+
+                        ex013 - Estilos CSS inline
+                        aplicamos dentro das tags a propriedade style
+                            ex:
+                            <h1 style:font-size:10px; backgorund-color:blue></h1>
+                            
+                            style:text-align = alinhamento de texto
+
+                        EX014 - Estilos css internos
+                       
+                        abrimos uma tag <style> dentro do HEAD e colocamos as propriedades 
+                            ex:
+                        <head>
+                            <style>
+                                body {
+                                    font-size:10px;
+                                    background-color:
+                                    blue;
+
+                                }
+
+                            
+                            </style>            
+
+                        </head>
+
+                        Estilos CSS externos 
+
+                        Criamos um arquivo .css com os nossos estilos e vamos no <head> e criamos um LINK:CSS
+                            @chareset(regra)
+                            @chareset "UTF-8";
+
+                            EX016 - Como representar cores no CSS:
+                            Temos quatro formas:
+    Hexadecimal é a representação por 1 2 3 4 5 6 7 8 9 A B C D E F
+    Seno 1 a mais fraca a f a mais forte 
+    0000ff -quanto de vermelho 00 quanto de verde ff quanto de azul
+
+                            nomes,hexadecil,rgb(red,green,blue),hsl(Hue,Saturation,luminosity)
+
+    Para criar gradiente 
+    background-image: linear-gradient(to right,#0000ff,#ff00ff) - Eu escolho quantas cores eu quero separada por vírgula
+    
+    background-image: linear-gradient(90deg)(Quer dizer quantos grals)
+        
+            Atributos do linear-gradient(to right - pra esquerda)
+            Atributos do linear-gradient(to bottom - pra baixo)
+            
+            Configurações gerais das CSS
+            <style>
+                *{
+
+                }
+            </style>
+    Também temos o radial gradiente :
+            background-image: radial-gradient(circle)
+
+            Widht-largura
+            padding-acochoamento aumenta o tamanho das bordas
+            margin : auto centralizar
+            border-radius : suavização da borda(Ela fica mais arrendondada)
+            box-shadow 10px 10px 10px black(sombraandarparaolado,sombraprabaixo,esplhar,coroutransparencia)
+
+            Tipografia(fontes) 
+            Font-family: NOME DA FONTE - podendo conter mais de uma fonte em sequencia para se o dispositivo nao reconhecer a fonte ele vá pra proxima e tente
+            font-family : sans-serif(sem serifa)
+            font-family : serif(com serifa)
+            font-family : monospace(mono espaçada)
+
+            Medidas Absolutas - cm, mm, in(polegada) , px, pt(ponto) , pc(paixa) pt,pc(não recomendada usar, porque são para papéis)
+            Medidas Relativas
+            em,ex,rem,vw,vh,%
+            recomendação usar - px,em
+            EM - o tamanho padrão são 16 px
+            
+            EM - 16 px
+            Font-weight:(peso da fonte) - lighter normal bold bolder
+            Font-weight:100-900(apenas algumas fontes)
+            weight(peso),widht(largura)height(altura)
+
+            Font-style:
+
+            text-decoration: underline(ítalico)
+
+            shorthand(Propriedade que anexa várias propriedades em uma só)
+            shorthand : font : font-style fontweight font-size font family
+            
+            Como baixar fontes - vá no site e baixe a fonte de sua preferência depois va em cima do seu html e coloque 
+            @font-face {
+            font-family: ;(nome que você quer para fonte)
+            src: url(nome do arquivo) format(nome do formato);
+                      }
+            
+            Temos vários tipos de format()
+            ('opentype') - (otf)
+            ('truetype') - (ttf)
+            ('embedded-opentype')
+            ('truwtype-att')(apple advanced typography)
+            ('svg')
+
+            para adiconar mais de uma fonte:
+src: url(nome do arquivo) format(nome do formato),url("") format("")
+                      Alinhamento de paragrafos
+    text-align - alinhamento de texto
+    text-indent: x.px Serve para dar uma margem do texto
+
+                      Criando identificadores 
+    colocamos dentro da tag um id ex:
+    <h1 id="principal">
+    </h1>
+
+    no css :
+
+    h1#principal {
+
+    }
+
+    em HTML é ID  = em CSS é # (só pode um elemento)
+    em HTML é class = em CSS é . (pode varios elementos)
+
+    border - uma borda
+    border(largura tipo cor)
+
+    Pseudo classes - para usar pseudo-classe nós usamos o :
+    ex:
+        <style>
+            div:hover(hover é uma ação quando eu passo o mouse em cima)
+        </style>
+    
+        <style>
+            div > p (Quer dizer o paragrafo que está dentro da div)
+            div:hover > p (Quer dizer que vai fazer um hover dentro da tag p da tag <div>)
+        </style>   
+        
+        Outras pseudo classes 
+
+        :visited(Vai dizer que cor vai ficar quando o site já foi visitado)
+        :active (quando estiver ativo vai gerar uma modificação)
+
+        Text-decortion:underline(sublinhado)
+
+        Pseudo elemento - mexe no conteudo
+
+        ::after - vai ser colocado depois do elemento
+            {  content:"" (conteudo)
+
+            }
+        ::before - vai ser colocado depois do elemento
+
+
+    Seletores Personalizados
+
+
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = childrean
+
+                Modelo de caixas
+
+        height - altura
+        widht - largura
+        border- linha que circunda o contudo(a caixa)
+        padding - acolchoamento ou prenchimento "almenta as bordas"
+        margin - é o espaço entre as cixas de fora pra dentro
+        outline - contorno
+
+        <div> quebra a linha é do tipo box level
+        <span> inline level não quebra a linha gera uma caixa que não ocupa o largura inteira é continua na mesma linha
+
+        "atributos do border"
+        border-widht:""
+        border-style:"" (solid(solido)dashed(pontilhado)doted(pontilhado)doble(linha dupla)
+        grove())
+        border-color:""
+
+        "atríbutos do padding"
+
+        padding-top
+        padding-right
+        padding-bottom(de baixo)
+        padding-left
+       IMPORTANTE : éssa é a ordem certa
+
+    IMPORTANTE : todos esses parâmetros acima servem para margem também
+       
+       margin:auto - centralizado
+
+       shorthand para border
+       border widht     
+       border-style
+       border-color
+       border : (w,s,c)
+       
+       shorthand para PADDING
+
+       padding     
+        
+       padding-top
+       padding-right
+       padding-bottom(de baixo)
+       padding-left
+
+       obs: se quiser o mesmo valor para todas apenas coloque uma vez e ela alterara todas de uma vez, e apenas duas vezes ele muda o de cima e de baixo e do lado e do outro
+
+       display : block,inline (podemos modificar se ele é inline ou box level)
+
+       <header></header>cabeçalho
+
+       Grouping tags e semantic tags
+
+       Header - Cria áreas relativas a cabeçalhos.Pode ser de um site ou até de uma seção ou artigo(pode conter menus de navegação)
+
+       Nav - Define uma area que possui os links de navegação pela estrutura de páginas que vão compor o web-site.Um <nav> pode estar dentro de um header
+
+       Main - É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções,artigos e conteúdos periféricos.
+
+       Section - Cria seções para sua página.Ela póde conter o conteúdo diretamente no seu corpo ou dividir os conteúdos especificos.
+
+       Article - Um artigo que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto.Podemos usar um <article> para delimitar um post do blog ou fórum,uma notícia,etc.
+
+       Aside - Delimita um conteúdo periférico e complementar ao conteúdo principal do artigo ou seção.Pode estar ao lado ou até mesmo no meio do texto
+
+       Fotter - Cria um rodapé para o site inteiro,seção ou artigo.Não faz parte diretamente do conteúdo e nem é um conteúdo periférico, mas possui informações como a autoria do conteúdo,links adicionais,mapa do site,documentos relacionados        
+
+        Sombras internas - 
+        box-shadow - inset
+
+        Como criar bola com border-radius
+        colocamos o border-radius em 50%
+        border-radius:50%;
+
+        Para separar links usamos margin-right
+
+        variáveis em css 
+        :root {
+            --exemplo        (aqui vou configurar as variaveis)           
+        }
+        temos que colocar os dois traços
+
+        exemplo 
+
+        :root {
+            --cor1:ffffff;
+        }
+
+        body {
+            backgorund-color:var(--cor1);
+        }
+
+        A maioria das caixas tem um padding e uma margem
+
+        Configuração global:
+        * {
+
+        }
+
+        trasition-duration (tempo de transição)
+        line-height - altura entre as fontes
+
+        Para colocar a lista dentro de uma caixa usamos no css:
+
+        ul {
+            list-style-position: inside;
+        }
+
+        Para colocar duas colunas
+          ul {
+            coluns:2
+        }
+
+        Para trocar o estilos dos demarcadores em css:
+
+        list-style-type: (voce pode até colocar um emoji basta copiar o código e colocar na frente \)
+
+        Espaço no css é 00A0
+
+            COMO AJUSTAR VIDEO
+       
+        para ajustar um video nós criamos uma div pra ele e colocamos position:relative
+        div.video {
+            position:relativa
+        }
+        
+        e colocamos outro acesse pra ele de outra maneira e colocamos position:absolute
+        
+        div > iframe {
+            position:absolute
+        }
+ 
+                        
+                        
+
+                
+                
+                    
+
+                    
+
+
+                            
+
+        
+       
+        
+
+
+-->
