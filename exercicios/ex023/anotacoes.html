@@ -551,6 +551,22 @@ src: url(nome do arquivo) format(nome do formato),url("") format("")
         Scope serve para indicar se esta na linha ou na coluna representada por ela
         scope="col"
         scope="row"
+
+        Efeito zebrado nas tabelas
+
+        tbody > tr:nth-child(2n)=de dois em dois ou (odd)=ímpar ou (even) = par 
+
+        Como criar cabeçalho fixo 
+
+        table {
+            position:absolute;(temos que colocar posição basoluta na tebela)
+        }
+
+        thead > tr > th {
+            position:sticky;
+            top:0;(é necessario colocar o top 0) (tabém podemos colocar -1px para ajustar)
+        }
+
                         
                         
 
