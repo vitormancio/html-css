@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:"droid" ;
+    src: url(font/idroid.otf);
+}
+body{
+    margin: 0px;
+    background-color: #84E1AD;
+}
+
+h1 {
+    margin: 0px;
+}
+
+
+header {
+    background-image: linear-gradient(to bottom,#34B96F,#1A5C38);
+    color:white;
+    text-align: center;
+    height: 150px;
+    border-width: 10px;
+    
+     
+}
+
+.tituloh {
+    text-align: center,justify;
+}
+
+header > h1 {
+    text-shadow: 2px 2px 2px black;
+
+}
+
+header > nav {
+    text-align: left;
+    text-decoration: none;
+    font-weight: 700;
+    color:white;  
+
+}
+
+#txtheader {
+    text-align: center;
+}
+
+a:visited {
+    color: white;
+    text-decoration:none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.linkg {
+    color: #1A5C38;
+    font-weight: bold;
+}
+
+a.linkg:hover {
+    text-decoration: underline;
+}
+
+strong{
+    color: #1A5C38;
+}
+
+main  {
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border: 10px;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+#imgbugdroid {
+    width: auto;
+    margin: auto;
+    
+}
+
+.img {
+    width: 700px;
+}
+
+.fontbug {
+    font-family: 'droid','sans-serif';
+    color:#21613F ;
+}
+
+h3 {
+    background-image: linear-gradient(to right,#CDF0DB 50%,white);
+}
+
+aside.box {
+    background-color: #C5EBD6;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+#titulop {
+    font-size:0.9em;
+    color:white;
+    background-color: #2FA866;
+    border-radius: 10px 10px 0px 0px;
+    padding:10px;
+    
+}
+
+footer {
+    text-align: center;
+    background-color: #1A5C38;
+    color: white;
+}
+
+source {
+    width: 200px;
+}
+
+li::before {
+    content:"✔️ ";
+    color: white;
+}
+p {
+    text-indent: 15px;
+    text-align: justify;
+    font-size: 1.05em;
+}
+
+
